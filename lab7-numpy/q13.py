@@ -1,6 +1,14 @@
-import numpy as np
 import pandas as pd
-import csv
+data=pd.read_csv("house-price-prediction-train.csv")
+print(data)
+
+data.head()
+
+X=data["LotArea"]
+Y=data["SalePrice"]
+print(X)
+print(Y)
+
 import matplotlib.pyplot as plt
-f=pd.read_csv('/home/cse3d/Downloads/house-price-prediction-train.csv')
-X=f[S]
+plt.plot(X,Y)
+plt.show()
